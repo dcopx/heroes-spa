@@ -1,6 +1,7 @@
-import React, { useMemo } from 'react'
+import React, { useContext, useMemo } from 'react'
 import { Navigate, useNavigate, useParams } from 'react-router'
-import { getHeroById } from '../../helpers/getHeroById'
+import { getHeroById } from '../../helpers/func/getHeroById'
+import { AuthContext } from '../../context/auth/AuthContext'
 
 export const HeroScreen = () => {
     const { id } = useParams()

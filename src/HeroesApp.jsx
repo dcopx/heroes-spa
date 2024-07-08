@@ -1,16 +1,11 @@
 import React from 'react'
-import { Route, Routes } from 'react-router'
-import { MarvelScreen } from './screens/heroes/MarvelScreen'
-import { DcScreen } from './screens/heroes/DcScreen'
 import { AppRoute } from './routes/AppRoute'
-import { Navbar } from './ui/components/NavBar'
-import { HeroesRoute } from './routes/HeroesRoute'
+import { AuthProvider } from './context/auth/AuthProvider'
 
 export const HeroesApp = () => {
     return (
-        <>
-
+        <AuthProvider>
             <AppRoute />
-        </>
+        </AuthProvider>
     )
 }

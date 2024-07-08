@@ -2,7 +2,7 @@ import queryString from 'query-string'
 import React from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 import { useForm } from '../../ui/hooks/useForm'
-import { getHeroesByName } from '../../helpers/getHeroesByName'
+import { getHeroesByName } from '../../helpers/func/getHeroesByName'
 import { HeroCard } from '../heroes/components/HeroCard'
 
 export const SearchScreen = () => {
